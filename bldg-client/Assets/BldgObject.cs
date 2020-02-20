@@ -2,11 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using Models;
 
 public class BldgObject : MonoBehaviour, IPointerDownHandler
 {
 
+    public Bldg model;
     public BldgController bldgController;
+
+
+    public void initialize(Bldg theModel, BldgController theController) {
+        this.model = theModel;
+        this.bldgController = theController;
+    }
+
 
     // Start is called before the first frame update
     void Start()

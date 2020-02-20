@@ -10,7 +10,7 @@ public class ChaseCamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        targetPosition = transform.position;
+        targetPosition = new Vector3(0f, 2, 6f);
     }
 
 
